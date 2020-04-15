@@ -1,0 +1,19 @@
+<div class="input">
+  <input type="text" [formControl]="name" placeholder="Поиск">
+</div>
+<div class="content-list_container">
+  <div>
+    <div *ngFor="let genre of genreList">
+      <p (click)="getFilter(genre)">{{genre}}</p>
+    </div>
+  </div>
+
+  <div class="content-list">
+    <div *ngFor="let cinema of cinemaList">
+      <app-cinema-item [cinema]="cinema"></app-cinema-item>
+    </div>
+  </div>
+</div>
+
+
+

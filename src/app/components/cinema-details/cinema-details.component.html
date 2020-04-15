@@ -1,0 +1,16 @@
+<div *ngIf="cinema$ | async as cinema">
+  <div class="item">
+    <img src="{{cinema.img}}" alt="{{cinema.name}}">
+    <div class="item-info">
+      <p>Название филма: <span>{{cinema.name}}</span></p>
+      <p>Рейтинг: <span>{{cinema.rate}}</span></p>
+      <p>Жанр: <span>{{cinema.genres}}</span></p>
+      <p>Продолжительность: <span>{{cinema.length}}</span></p>
+      <p>Описание: <span>{{cinema.description}}</span></p>
+    </div>
+  </div>
+
+  <div>
+    <app-cinema-list-filter [cinema]="cinema" class="list-filter"></app-cinema-list-filter>
+  </div>
+</div>

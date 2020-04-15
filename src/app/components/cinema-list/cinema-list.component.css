@@ -1,0 +1,20 @@
+.input {
+  margin-top: 10px;
+}
+
+.content-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 50px;
+}
+
+.content-list_container {
+  display: flex;
+  margin-top: 20px;
+}
+
+p {
+  color: #f5faff;
+  cursor: pointer;
+}
